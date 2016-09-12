@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	.banner-shop{ width:100%; height:100%; background:url(img/banner.jpg); background-size:cover; padding-top:14%; text-align:center }
+	.banner-shop h1{ width:100%; text-align:center; font-size:7em; color:#FFF ; }
+	.banner-shop p{width:100%; text-align:center;font-size:2em; color:#CCC; margin-top:2%  }
+	.banner-shop a{ width:200px;; height:3em; background:#f05f40; text-align:center; line-height:2.5em; margin-bottom:15%; margin-top:5%; font-size:1.5em; color:#FFF }
+	.banner-shop a:hover{color:#FFF; background:#ee4b28;}
+	.small-line{ display:inline-block; width:60px; height:2px; background:#f05f40;}
+	.brand-introduction{ width:100%; background:#f05f40; padding-top:4%;  text-align:center}
+	.brand-introduction h2{  width:100%; text-align:center; font-size:2.5em; color:#FFF ; font-weight:bold;}
+	.brand-introduction p{width:100%; text-align:center;font-size:1.5em; color:#fff; margin-top:1%;  }
+	.brand-introduction a{ width:100px; height:3em; background:#ffffff; text-align:center; line-height:2em; margin-bottom:4%; margin-top:2%; font-size:1em; color:#000000;font-weight:bold; }  .brand-introduction  a:hover{color:#000000; background:#ccc;}
+	.brand-introduction .small-line{ display:inline-block; width:60px; height:2px; background:#ffffff;}
+	.product-show{ margin-top:4%}
+	.product-show .shodow{ width:100%; height:100%; background:rgba(238,75,40,0.6); position:absolute; top:0; left:0px; z-index:100; display:none;} 
+	.shodow h3{ position:absolute; top:50%; left:30%; color:#fff; }
+	.cuber:hover{ cursor:pointer;}
+	.footer{ padding-bottom:40px; padding-top:30px; background:#f05f40; width:100%; color:#fff; margin-top:40px;}
+	.e-mail{ color:#fff;}
+	.brand-width{ width:70%; margin:0 auto}
+    </style>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    	$(function(){
+			$(".cuber").hover(function(){
+				$(this).find(".shodow").show()
+				},function(){$(this).find(".shodow").hide()})
+			})
+    </script>
+<title>bootstrap-alice</title>
+</head>
+
+<body  data-spy="scroll" data-target="#bigNavbar">
+<nav class="navbar navbar-fixed-top navbar-default navbar-inverse" id="bigNavbar">
+	<div class=" container-fluid">
+    <!--导航栏头部品牌部分-->
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                <span class="sr-only">Toggle navigation</span>  
+            	<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">AliceChen</a>
+        </div>
+    	<!--navbar-brand end-->
+        <div class="collapse navbar-collapse" id="navbar1">
+         <form class="navbar-form navbar-right">
+            	<div class="form-group">
+                	<input type="text" class="form-control" placeholder="搜索关键词...">
+                </div>
+                <button type="button" class="btn btn-info">搜索</button>
+            </form>
+        	<ul class=" nav navbar-nav navbar-right nav-pills">
+            	<li class="active"><a href="#index">首页</a></li>
+                <li><a href="#brand">品牌介绍</a></li>
+                <li class="dropdown"><a href="#product" class="dropdown-toggle" data-toggle="dropdown">产品信息
+                	<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    	<li class="dropdown-header">头部信息</li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">合作商</a></li>
+                    <li><a href="#contact">练习我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--navbar end ---->
+
+<div class="banner-shop" id="index">
+
+<h1>君君助你实现梦想</h1>
+    <div class="small-line"></div>
+     <p>想要改变吗？想要实现自己的人生价值吗？快找君君职业规划所，帮你实现人生蜕变！！</p>
+    <a  class="btn" href="#">更多咨询</a>
+</div>
+<div class="brand-introduction" id="brand">
+	<div class="brand-width">
+
+    <h2>君君职业规划所</h2>
+    <div class="small-line"></div>
+    <p>君君职业规划所成立与1900年，历史悠久，由文艺才女陈子君一手创办，现市值达到上千亿。没有梦想对于每个人来说是非常可怕的一件事情，如同无头苍蝇似的到处碰壁。很多人现代社会由于商品经济的发展变化发展很快，很难对自己的人生进行一个长期的规划。君君职业规划所帮你完成职业规划。</p>
+    <a class="btn" href="javascript:;">更多咨询</a>
+    </div>
+</div>
+
+<div class="product-show" id="product">
+	<h2 class="text-center">产品秀</h2>
+    <div class="container">
+    	<div class="row">
+        <!--1-->
+        	<div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/1.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/1.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+            	
+            </div>
+            <!--2-->
+           <div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/2.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/2.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+            	
+            </div>
+            
+            <!--3-->
+            <div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/3.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/3.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+            	
+            </div>
+            <!--4-->
+        	<div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/4.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/4.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+           <!--5-->
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/5.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/5.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!--6--> 
+            <div class="col-lg-4 col-md-6 col-sm-6 cuber" data-toggle="modal" data-target="#myModal">
+            <div class="shodow">
+            	<h3 class=" text-center" >SERVICE NAME</h3>
+            </div>
+            	<div class="thumbnail">
+      					<img src="img/thumbnails/6.jpg"    alt="...">
+    			</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1">
+            	<div class="modal-dialog">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                           <h4 class="modal-title">Pic Title</h4> 
+                        </div>
+                        <div class="modal-body">
+                        	<img style="width:100%; height:100%;" src="img/fullsize/6.jpg">
+                            <h3 class="text-center">文艺系列</h3>
+                            <p class="text-center">快快联系我们</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
+<!--产品介绍 end ---->
+<div class="footer" id="contact">
+<div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="">联系我们</h2>
+                    <hr class="primary">
+                    <p>准备好为你的梦想起航了吗？好的，快来给我们打电话或者发送e-mail给我们，我们将尽快回复大家！</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                   
+                    <p><strong>陈子君：</strong>136-1169-0739</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                   
+                    <p><a class="e-mail" href="mailto:330550740@qq.com">330550740@qq.com</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+</body>
+</html>
